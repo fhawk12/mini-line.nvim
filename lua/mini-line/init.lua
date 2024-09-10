@@ -15,10 +15,10 @@ local function get_diagnostic_counts()
   local info = ""
 
   if M.icon then
-    if error_count > 0 then error = " " .. error_count .. " " end
-    if warn_count > 0 then warn = " " .. warn_count .. " " end
+    if error_count > 0 then error = " " .. error_count .. " " end
+    if warn_count > 0 then warn = " ".. warn_count .. " " end
     if hint_count > 0 then hint = " " .. hint_count .. " " end
-    if info_count > 0 then info = " " .. info_count .. " " end
+    if info_count > 0 then info = " " .. info_count .. " " end
   else
     if error_count > 0 then error = "E:" .. error_count .. " " end
     if warn_count > 0 then warn = "W:" .. warn_count .. " " end
